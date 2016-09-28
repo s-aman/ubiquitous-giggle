@@ -1,0 +1,32 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-energized">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-header-bar class="bar-energized">
+            <div class="title">Send with Relay</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header ">
+            <ion-list id="sendWithRelay-list6">
+                <ion-item class="item-icon-left" id="sendWithRelay-list-item1" ui-sref="sendWithRelay.myPackages" menu-close="">
+                    <i class="icon ion-ios-box"></i>My Packages</ion-item>
+                <ion-item class="item-icon-left" id="sendWithRelay-list-item2" ui-sref="sendWithRelay.payment" menu-close="">
+                    <i class="icon ion-card"></i>Payment</ion-item>
+                <ion-item class="item-icon-left" id="sendWithRelay-list-item5" ui-sref="sendWithRelay.carryWithRelay" menu-close="">
+                    <i class="icon ion-android-plane"></i>Switch to Carry Mode</ion-item>
+            </ion-list>
+            <div class="spacer" style="width: 268px; height: 291px;"></div>
+            <ion-list id="sendWithRelay-list8">
+                <!--<ion-item class="item-icon-left" id="sendWithRelay-list-item7" ui-sref="sendWithRelay.login" menu-close="">-->
+				<ion-item class="item-icon-left" id="sendWithRelay-list-item7" ng-click="logout()" menu-close="">
+                    <i class="icon ion-log-out"></i>Logout</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page13">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form12" class="list">
+            <ion-list id="login-list9">
+                <label class="item item-input" id="login-input13">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="" ng-model="userLogin.email">
+                </label>
+                <label class="item item-input" id="login-input16">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="userLogin.password">
+                </label>
+            </ion-list>
+			<div ng-show="exception.code" class="item item-icon-left assertive item-wrap" href="#">
+        <i class="icon ion-ios-locked"></i>
+        {{exception.message}}
+     </div>
+            <div class="spacer" style="height: 40px;"></div>
+            <!--<a ui-sref="sendWithRelay.myPackages" id="login-button11" ng-click="login()" class="button button-stable  button-block">Log in</a>-->
+			<a id="login-button11" ng-click="login()" class="button button-stable  button-block">Log in</a>
+            <a ui-sref="sendWithRelay.relay" id="login-button12" class="button button-positive  button-block button-clear">Or create an account</a>
+        </form>
+    </ion-content>
+</ion-view>

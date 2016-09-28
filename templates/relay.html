@@ -1,0 +1,23 @@
+<ion-view title="Relay" id="page12">
+    <ion-content padding="true" class=" manual-remove-top-padding has-header">
+        <form id="relay-form11" class="list">
+            <ion-list id="relay-list7" class="manual-list-fullwidth">
+                <label class="item item-input" id="relay-input9">
+                    <span class="input-label">Name</span>
+                    <input type="text" placeholder="" ng-model="register.fullname">
+                </label>
+                <label class="item item-input" id="relay-input10">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="" ng-model="register.email">
+                </label>
+                <label class="item item-input" id="relay-input12">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="register.password">
+                </label>
+            </ion-list>
+            <!--<a ui-sref="sendWithRelay.myPackages" id="relay-button10" class="button button-stable  button-block">Sign up</a>-->
+			<a ui-sref="sendWithRelay.myPackages" id="relay-button10" ng-click="register()" class="button button-stable  button-block">Sign up</a>
+			<a ui-sref="sendWithRelay.login" id="relay-button10" class="button button-stable  button-block">Already have an account ? Please Sign in !</a>
+        </form>
+    </ion-content>
+</ion-view>
